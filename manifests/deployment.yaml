@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: topic-challenger-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: topic-challenger-app
+  template:
+    metadata:
+      labels:
+        app: topic-challenger-app
+    spec:
+      containers:
+      - name: topic-challenger-app
+        image: satishpolasi/topic_challenger:v15
+        ports:
+        - containerPort: 8501
+        env:
+        - name: GROQ_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: groq-api-secret
+              key: GROQ_API_KEY
