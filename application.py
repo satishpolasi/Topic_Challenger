@@ -7,7 +7,7 @@ load_dotenv()
 
 
 def main():
-    st.set_page_config(page_title="Topic Challenger" , page_icon="🎧🎧")
+    st.set_page_config(page_title="BRAINPICKR" , page_icon="🎧🎧")
 
     if 'quiz_manager'not in st.session_state:
         st.session_state.quiz_manager = QuizManager()
@@ -22,7 +22,7 @@ def main():
         st.session_state.rerun_trigger = False
         
 
-    st.title("Topic Challenger AI")
+    st.title("BRAINPICKR")
 
     st.sidebar.header("Quiz Settings")
 

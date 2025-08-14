@@ -35,9 +35,9 @@
 - **Clone your GitHub repo**
 
   ```bash
-  git clone https://github.com/data-guru0/TESTING-9.git
+  git clone https://github.com/satishpolasi/Topic_Challenger.git
   ls
-  cd TESTING-9
+  cd Topic_Challenger
   ls  # You should see the contents of your project
   ```
 
